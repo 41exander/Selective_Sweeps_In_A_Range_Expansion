@@ -1,1 +1,3 @@
-# Selective_Sweeps_In_A_Range_Expansion
+# Selective Sweeps In A Range Expansion
+
+Here, we publish code and calculations that correspond to the article "Selective Sweeps and Propagation of Driver Mutations in Cancer"

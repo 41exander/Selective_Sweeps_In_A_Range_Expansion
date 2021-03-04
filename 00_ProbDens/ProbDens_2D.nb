@@ -1,0 +1,719 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29801,        711]
+NotebookOptionsPosition[     27001,        658]
+NotebookOutlinePosition[     27390,        674]
+CellTagsIndexPosition[     27347,        671]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"fX", "[", "x_", "]"}], ":=", 
+  RowBox[{"3", "*", 
+   RowBox[{"x", "^", "2"}], "*", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"x", "^", "3"}]}], "/", 
+      RowBox[{"theta", "^", "3"}]}], "]"}], "/", 
+    RowBox[{"theta", "^", "3"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"fY", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", " ", 
+   RowBox[{"3", "*", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "-", "y"}], ")"}], "^", "2"}], "/", 
+     RowBox[{"x", "^", "3"}]}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"x", "*", 
+    RowBox[{"fX", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8070884470853767`*^9, 3.807088510261058*^9}, {
+  3.807090430412912*^9, 3.8070904740621147`*^9}, {3.807090506890524*^9, 
+  3.807090534030715*^9}, {3.8070914169210253`*^9, 3.807091417081976*^9}, {
+  3.8070915077283583`*^9, 3.807091533700136*^9}, {3.8070936141266813`*^9, 
+  3.807093615969634*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"f90a928e-03a2-487d-bed5-2dcb0816bcf9"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"Gamma", "[", 
+      FractionBox["4", "3"], "]"}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+       FractionBox["1", 
+        SuperscriptBox["theta", "3"]], ")"}], 
+     RowBox[{"1", "/", "3"}]]], 
+   RowBox[{
+     RowBox[{"Re", "[", 
+       SuperscriptBox["theta", "3"], "]"}], ">", "0"}]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{3.807093902012411*^9, 3.807159185908781*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"c7942035-8235-4c6c-b25c-8f73049fa7e3"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.807093897864018*^9, 
+  3.807093897865562*^9}},ExpressionUUID->"e9fac625-7900-4934-8f3d-\
+b3415c185fa0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"fY", "[", 
+    RowBox[{"x", ",", "y"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "x"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8070908703321342`*^9, 3.807090870453536*^9}, 
+   3.807093896347515*^9, {3.8071591550994377`*^9, 3.807159201173966*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"52bb5059-c19d-4c09-9843-79eb1f172ec3"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.807159174564043*^9, 3.8071592021945457`*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"e8efbd74-b7a5-4117-ac4a-9788fd9882f5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "*", 
+    RowBox[{"fX", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.807094017578409*^9, 3.8070940177088947`*^9}, {
+  3.8070983415843153`*^9, 
+  3.807098357973591*^9}},ExpressionUUID->"ba2d1739-450d-476e-ae89-\
+953d48183e12"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"Gamma", "[", 
+      FractionBox["5", "3"], "]"}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+       FractionBox["1", 
+        SuperscriptBox["theta", "3"]], ")"}], 
+     RowBox[{"2", "/", "3"}]]], 
+   RowBox[{
+     RowBox[{"Re", "[", 
+       SuperscriptBox["theta", "3"], "]"}], ">", "0"}]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{3.807094020531351*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"d3eea2c6-a644-46e1-8407-ac3e7c4f885d"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.807093894177586*^9, 
+  3.807093894190344*^9}},ExpressionUUID->"f54a713d-ec07-4df2-ab74-\
+f04654e0a069"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"fX", "[", "x", "]"}], "*", 
+    RowBox[{"fY", "[", 
+     RowBox[{"x", ",", "y"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8070954614620237`*^9, 3.807095501671505*^9}, {
+  3.807098598363579*^9, 3.807098598521227*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"20044057-b273-4fe0-9f3d-afc09e63131d"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"3", " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{"9", " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"-", 
+               FractionBox[
+                SuperscriptBox["y", "3"], 
+                SuperscriptBox["theta", "3"]]}]], " ", 
+            SuperscriptBox["y", "2"]}], "+", 
+          RowBox[{"2", " ", 
+            SuperscriptBox["y", "2"], " ", 
+            RowBox[{"Gamma", "[", 
+              RowBox[{"0", ",", 
+                FractionBox[
+                 SuperscriptBox["y", "3"], 
+                 SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"3", " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"-", "4"}], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", 
+                    SuperscriptBox["theta", "3"]], ")"}], 
+                    RowBox[{"1", "/", "3"}]], " ", "y", " ", 
+                   RowBox[{"Gamma", "[", 
+                    RowBox[{
+                    FractionBox["4", "3"], ",", 
+                    FractionBox[
+                    SuperscriptBox["y", "3"], 
+                    SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+                 RowBox[{"Gamma", "[", 
+                   RowBox[{
+                    FractionBox["5", "3"], ",", 
+                    FractionBox[
+                    SuperscriptBox["y", "3"], 
+                    SuperscriptBox["theta", "3"]]}], "]"}]}], ")"}]}], 
+           SuperscriptBox[
+            RowBox[{"(", 
+              FractionBox["1", 
+               SuperscriptBox["theta", "3"]], ")"}], 
+            RowBox[{"2", "/", "3"}]]]}], ")"}]}], 
+    RowBox[{"2", " ", 
+      SuperscriptBox["theta", "3"]}]], 
+   RowBox[{
+     RowBox[{
+       RowBox[{"Re", "[", "y", "]"}], ">", "0"}], "&&", 
+     RowBox[{"y", "\[Equal]", 
+       RowBox[{"Re", "[", "y", "]"}]}], "&&", 
+     RowBox[{
+       RowBox[{"Re", "[", 
+         SuperscriptBox["theta", "3"], "]"}], ">", "0"}]}]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{
+  3.807095503771196*^9, {3.80709860684496*^9, 3.8070986133778963`*^9}},
+ CellLabel->"Out[51]=",ExpressionUUID->"20c34cf9-5de2-4a30-bd16-bc1ebaf3db26"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"fY", "[", 
+     RowBox[{"x", ",", "y"}], "]"}], "*", 
+    RowBox[{"fX", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.807099786928852*^9, 3.807099803375264*^9}, {
+  3.807100230020424*^9, 3.807100230192136*^9}, {3.807100322897414*^9, 
+  3.807100371915761*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"4a50d15b-10dc-4150-a249-429c2dd3f878"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"3", " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{"9", " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"-", 
+               FractionBox[
+                SuperscriptBox["y", "3"], 
+                SuperscriptBox["theta", "3"]]}]], " ", 
+            SuperscriptBox["y", "2"]}], "+", 
+          RowBox[{"2", " ", 
+            SuperscriptBox["y", "2"], " ", 
+            RowBox[{"Gamma", "[", 
+              RowBox[{"0", ",", 
+                FractionBox[
+                 SuperscriptBox["y", "3"], 
+                 SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"3", " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"-", "4"}], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", 
+                    SuperscriptBox["theta", "3"]], ")"}], 
+                    RowBox[{"1", "/", "3"}]], " ", "y", " ", 
+                   RowBox[{"Gamma", "[", 
+                    RowBox[{
+                    FractionBox["4", "3"], ",", 
+                    FractionBox[
+                    SuperscriptBox["y", "3"], 
+                    SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+                 RowBox[{"Gamma", "[", 
+                   RowBox[{
+                    FractionBox["5", "3"], ",", 
+                    FractionBox[
+                    SuperscriptBox["y", "3"], 
+                    SuperscriptBox["theta", "3"]]}], "]"}]}], ")"}]}], 
+           SuperscriptBox[
+            RowBox[{"(", 
+              FractionBox["1", 
+               SuperscriptBox["theta", "3"]], ")"}], 
+            RowBox[{"2", "/", "3"}]]]}], ")"}]}], 
+    RowBox[{"2", " ", 
+      SuperscriptBox["theta", "3"]}]], 
+   RowBox[{
+     RowBox[{
+       RowBox[{"Re", "[", "y", "]"}], ">", "0"}], "&&", 
+     RowBox[{"y", "\[Equal]", 
+       RowBox[{"Re", "[", "y", "]"}]}], "&&", 
+     RowBox[{
+       RowBox[{"Re", "[", 
+         SuperscriptBox["theta", "3"], "]"}], ">", "0"}]}]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{3.8071003492736483`*^9, 3.80710038650254*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"14258b74-ebed-4167-8ac4-7b644d24ede0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"3", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"9", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          FractionBox[
+           SuperscriptBox["y", "3"], 
+           SuperscriptBox["theta", "3"]]}]], " ", 
+        SuperscriptBox["y", "2"]}], "+", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["y", "2"], " ", 
+        RowBox[{"Gamma", "[", 
+         RowBox[{"0", ",", 
+          FractionBox[
+           SuperscriptBox["y", "3"], 
+           SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+       FractionBox[
+        RowBox[{"3", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "4"}], " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["1", 
+               SuperscriptBox["theta", "3"]], ")"}], 
+             RowBox[{"1", "/", "3"}]], " ", "y", " ", 
+            RowBox[{"Gamma", "[", 
+             RowBox[{
+              FractionBox["4", "3"], ",", 
+              FractionBox[
+               SuperscriptBox["y", "3"], 
+               SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+           RowBox[{"Gamma", "[", 
+            RowBox[{
+             FractionBox["5", "3"], ",", 
+             FractionBox[
+              SuperscriptBox["y", "3"], 
+              SuperscriptBox["theta", "3"]]}], "]"}]}], ")"}]}], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          FractionBox["1", 
+           SuperscriptBox["theta", "3"]], ")"}], 
+         RowBox[{"2", "/", "3"}]]]}], ")"}]}], 
+    RowBox[{"2", " ", 
+     SuperscriptBox["theta", "3"]}]], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.807100321523148*^9, 3.8071003269235888`*^9}, {
+  3.8071003994736433`*^9, 3.807100411945176*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"a2c9085c-cc31-4810-afb1-1c7458f85655"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"2\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"2\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", \\\"y\\\", \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 1, 1, 16587772316789953199, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.807100484667165*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"c71ca99c-e391-4f08-8c60-7ec2c19789cf"],
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+  RowBox[{
+   FractionBox[
+    RowBox[{"3", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"9", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          FractionBox[
+           SuperscriptBox["y", "3"], 
+           SuperscriptBox["theta", "3"]]}]], " ", 
+        SuperscriptBox["y", "2"]}], "+", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["y", "2"], " ", 
+        RowBox[{"Gamma", "[", 
+         RowBox[{"0", ",", 
+          FractionBox[
+           SuperscriptBox["y", "3"], 
+           SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+       FractionBox[
+        RowBox[{"3", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "4"}], " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["1", 
+               SuperscriptBox["theta", "3"]], ")"}], 
+             RowBox[{"1", "/", "3"}]], " ", "y", " ", 
+            RowBox[{"Gamma", "[", 
+             RowBox[{
+              FractionBox["4", "3"], ",", 
+              FractionBox[
+               SuperscriptBox["y", "3"], 
+               SuperscriptBox["theta", "3"]]}], "]"}]}], "+", 
+           RowBox[{"Gamma", "[", 
+            RowBox[{
+             FractionBox["5", "3"], ",", 
+             FractionBox[
+              SuperscriptBox["y", "3"], 
+              SuperscriptBox["theta", "3"]]}], "]"}]}], ")"}]}], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          FractionBox["1", 
+           SuperscriptBox["theta", "3"]], ")"}], 
+         RowBox[{"2", "/", "3"}]]]}], ")"}]}], 
+    RowBox[{"2", " ", 
+     SuperscriptBox["theta", "3"]}]], 
+   RowBox[{"\[DifferentialD]", "y"}]}]}]], "Output",
+ CellChangeTimes->{3.807100415084024*^9, 3.807100484675989*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"04db7546-5cd7-48aa-a358-41dbd401f697"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"2\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"2\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", \\\"y\\\", \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 58, 14, 16587693561945184269, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.807100235930787*^9, {3.807100274965968*^9, 3.80710031194739*^9}, {
+   3.807100415074473*^9, 3.807100430019491*^9}, 
+   3.807100466840288*^9},ExpressionUUID->"a73618ab-c2e5-4b79-b5f3-\
+ff8806a00513"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\[DoubleDot]"], "Input",ExpressionUUID->"87f8ee77-0ae9-4112-9204-91ff5289e84f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"2\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"2\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", \\\"y\\\", \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 55, 13, 16587693561945184269, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.807100235930787*^9, {3.807100274965968*^9, 
+   3.80710031194739*^9}},ExpressionUUID->"19ba3be8-57b6-4f12-8bc3-\
+e45a4f468a83"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"2\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"2\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", \\\"y\\\", \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 54, 12, 16587693561945184269, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.807100235930787*^9, {3.807100274965968*^9, 
+   3.807100286943686*^9}},ExpressionUUID->"84167d9d-0997-4467-bb2d-\
+d2b653bba27f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.807100270450054*^9, 
+  3.807100271931356*^9}},ExpressionUUID->"91a29c7e-f354-4f3e-9e9d-\
+3f02412d2762"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"3\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"3\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", SuperscriptBox[\\\"y\\\", \\\"2\\\"], \\\" \
+\\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \
+\\\"3\\\"], \\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+\\\"y\\\", \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", \
+RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \\\",\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 53, 11, 16587693561945184269, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.8070998107664013`*^9, {3.807099881247755*^9, 3.807099886815619*^9}, {
+   3.807100253135445*^9, 
+   3.80710025345063*^9}},ExpressionUUID->"feaaff10-dba9-48f6-b9d4-\
+5c1eab893fad"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Integrate", "idiv", 
+   "\"Integral of \\!\\(\\*RowBox[{FractionBox[RowBox[{\\\"27\\\", \\\" \\\", \
+SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{\\\"-\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}]], \\\" \\\", SuperscriptBox[\\\"y\
+\\\", \\\"3\\\"]}], RowBox[{\\\"2\\\", \\\" \\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]}]], \\\"+\\\", \
+FractionBox[RowBox[{\\\"3\\\", \\\" \\\", SuperscriptBox[\\\"y\\\", \
+\\\"3\\\"], \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], SuperscriptBox[\\\
+\"theta\\\", \\\"3\\\"]], \\\"-\\\", RowBox[{\\\"18\\\", \\\" \\\", \
+SuperscriptBox[RowBox[{\\\"(\\\", FractionBox[\\\"1\\\", \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \\\")\\\"}], RowBox[{\\\"2\\\", \\\
+\"/\\\", \\\"3\\\"}]], \\\" \\\", SuperscriptBox[\\\"y\\\", \\\"2\\\"], \\\" \
+\\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", RowBox[{FractionBox[\\\"4\\\", \
+\\\"3\\\"], \\\",\\\", FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}], \\\"+\\\", \
+RowBox[{FractionBox[\\\"9\\\", \\\"2\\\"], \\\" \\\", SuperscriptBox[RowBox[{\
+\\\"(\\\", FractionBox[\\\"1\\\", SuperscriptBox[\\\"theta\\\", \\\"3\\\"]], \
+\\\")\\\"}], RowBox[{\\\"1\\\", \\\"/\\\", \\\"3\\\"}]], \\\" \\\", \
+\\\"y\\\", \\\" \\\", RowBox[{\\\"Gamma\\\", \\\"[\\\", \
+RowBox[{FractionBox[\\\"5\\\", \\\"3\\\"], \\\",\\\", \
+FractionBox[SuperscriptBox[\\\"y\\\", \\\"3\\\"], \
+SuperscriptBox[\\\"theta\\\", \\\"3\\\"]]}], \\\"]\\\"}]}]}]\\) does not \
+converge on \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\
+\[Infinity]\\\"}], \\\"}\\\"}]\\).\"", 2, 52, 10, 16587693561945184269, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.8070998107664013`*^9, 3.807099881247755*^9, {3.8071002469226217`*^9, 
+   3.807100251090164*^9}},ExpressionUUID->"0f5f50b6-e9ec-4051-a4d6-\
+f899045b6f57"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.807099877294107*^9, 
+  3.807099879793151*^9}},ExpressionUUID->"213968bd-b8af-49c3-9a8b-\
+071d69e1df8e"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.807161447961617*^9, 
+  3.80716144959604*^9}},ExpressionUUID->"f31387b5-4a8b-4ab6-b2c1-\
+de6833b63b1c"]
+},
+WindowSize->{720, 762},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.1 for Linux x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"41ff51f4-83bd-49a4-83c9-21daf16ff1c9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1242, 34, 92, "Input",ExpressionUUID->"f90a928e-03a2-487d-bed5-2dcb0816bcf9"],
+Cell[1825, 58, 527, 15, 78, "Output",ExpressionUUID->"c7942035-8235-4c6c-b25c-8f73049fa7e3"]
+}, Open  ]],
+Cell[2367, 76, 152, 3, 29, "Input",ExpressionUUID->"e9fac625-7900-4934-8f3d-b3415c185fa0"],
+Cell[CellGroupData[{
+Cell[2544, 83, 419, 9, 29, "Input",ExpressionUUID->"52bb5059-c19d-4c09-9843-79eb1f172ec3"],
+Cell[2966, 94, 174, 2, 56, "Output",ExpressionUUID->"e8efbd74-b7a5-4117-ac4a-9788fd9882f5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3177, 101, 410, 11, 29, "Input",ExpressionUUID->"ba2d1739-450d-476e-ae89-953d48183e12"],
+Cell[3590, 114, 506, 15, 78, "Output",ExpressionUUID->"d3eea2c6-a644-46e1-8407-ac3e7c4f885d"]
+}, Open  ]],
+Cell[4111, 132, 152, 3, 29, "Input",ExpressionUUID->"f54a713d-ec07-4df2-ab74-f04654e0a069"],
+Cell[CellGroupData[{
+Cell[4288, 139, 459, 11, 29, "Input",ExpressionUUID->"20044057-b273-4fe0-9f3d-afc09e63131d"],
+Cell[4750, 152, 2325, 61, 100, "Output",ExpressionUUID->"20c34cf9-5de2-4a30-bd16-bc1ebaf3db26"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7112, 218, 506, 12, 29, "Input",ExpressionUUID->"4a50d15b-10dc-4150-a249-429c2dd3f878"],
+Cell[7621, 232, 2298, 60, 100, "Output",ExpressionUUID->"14258b74-ebed-4167-8ac4-7b644d24ede0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9956, 297, 1947, 55, 87, "Input",ExpressionUUID->"a2c9085c-cc31-4810-afb1-1c7458f85655"],
+Cell[11906, 354, 1993, 32, 61, "Message",ExpressionUUID->"c71ca99c-e391-4f08-8c60-7ec2c19789cf"],
+Cell[13902, 388, 1890, 54, 89, "Output",ExpressionUUID->"04db7546-5cd7-48aa-a358-41dbd401f697"],
+Cell[15795, 444, 2126, 36, 127, "Message",ExpressionUUID->"a73618ab-c2e5-4b79-b5f3-ff8806a00513"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17958, 485, 93, 0, 29, "Input",ExpressionUUID->"87f8ee77-0ae9-4112-9204-91ff5289e84f"],
+Cell[18054, 487, 2054, 35, 127, "Message",ExpressionUUID->"19ba3be8-57b6-4f12-8bc3-e45a4f468a83"],
+Cell[20111, 524, 2055, 35, 127, "Message",ExpressionUUID->"84167d9d-0997-4467-bb2d-d2b653bba27f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22203, 564, 152, 3, 29, "Input",ExpressionUUID->"91a29c7e-f354-4f3e-9e9d-3f02412d2762"],
+Cell[22358, 569, 2157, 37, 127, "Message",ExpressionUUID->"feaaff10-dba9-48f6-b9d4-5c1eab893fad"],
+Cell[24518, 608, 2132, 36, 127, "Message",ExpressionUUID->"0f5f50b6-e9ec-4051-a4d6-f899045b6f57"]
+}, Open  ]],
+Cell[26665, 647, 152, 3, 29, "Input",ExpressionUUID->"213968bd-b8af-49c3-9a8b-071d69e1df8e"],
+Cell[26820, 652, 177, 4, 29, "Input",ExpressionUUID->"f31387b5-4a8b-4ab6-b2c1-de6833b63b1c"]
+}
+]
+*)
+
